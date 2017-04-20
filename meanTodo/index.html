@@ -3,6 +3,14 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 
+		<!-- angularjs and ui router tags -->
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+
+        <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
 		<!-- Latest compiled and minified CSS -->
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -16,7 +24,19 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </head>
-<body>
+<body ng-app="meanTodo">
+
+<ui-router></ui-router>
+
+	<!-- Injections -->
+	<script src="ucfCompanionApp.module.js"></script>
 	
+	<!-- List State Injections -->
+
+	<script src="states/list/list.module.js"></script>
+	<script src="states/list/list.controller.js"></script>
+	<script src="states/list/list.route.js"></script>
+
+
 </body>
 </html>
