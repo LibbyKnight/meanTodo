@@ -8,11 +8,11 @@ var PORT = 3000;
 
 
 
-app.get('/', function(req, res) {
-	res.sendfile('/meanTodo/index.html');
-});
+// app.get('/', function(req, res) {
+// 	res.sendFile('public/meanTodo/index.html');
+// });
 
-app.use(express.static('public'))
+app.use(express.static('public'));
 
 app.listen(PORT, function() {
 	console.log("Listening on port " + PORT);
