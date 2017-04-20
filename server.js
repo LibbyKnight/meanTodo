@@ -10,7 +10,7 @@ var PORT = 3000;
 
 // app.get('/', function(req, res) {
 // 	res.sendFile('public/meanTodo/index.html');
-// });
+// });r 
 
 app.use(express.static('public'));
 
