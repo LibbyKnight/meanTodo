@@ -13,5 +13,5 @@ app.listen(PORT, function() {
 
 
 app.get('/', function(req, res) {
-	res.sendfile('index.html');
+	res.sendfile('/meanTodo/index.html');
 });
