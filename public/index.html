@@ -26,17 +26,17 @@
 </head>
 <body ng-app="meanTodo">
 
-<ui-view></ui-view>
+<div class="container" ui-view>
 
-	<!-- Injections -->
-	<script src="/public/meanTodo.module.js"></script>
+</div>
+	
 	
 	<!-- List State Injections -->
+	<script src="/states/list/list.module.js"></script>
+	<script src="/states/list/list.controller.js"></script>
+	<script src="/states/list/list.route.js"></script>
 
-	<script src="/meanTodo/states/list/list.module.js"></script>
-	<script src="/meanTodo/states/list/list.controller.js"></script>
-	<script src="/meanTodo/states/list/list.route.js"></script>
-
-
+<!-- Injections -->
+	<script src="/meanTodo.module.js"></script>
 </body>
 </html>
