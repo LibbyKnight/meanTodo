@@ -1,98 +1,15 @@
-
-<!-- Tabs with dropdowns -->
-<ul class="nav nav-tabs">
-  ...
-
-  <li role="presentation" class="dropdown">
-    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-      Dropdown <span class="caret"></span>
-    </a>
-    <ul class="dropdown-menu">
-      ...
-    </ul>
-  </li>
-  ...
-</ul>
-
-
-
-<!-- Checkboxes -->
 <div class="row">
-  <div class="col-lg-6">
-    <div class="input-group">
-      <span class="input-group-addon">
-        <input type="checkbox" aria-label="...">
-      </span>
-      <input type="text" class="form-control" aria-label="...">
-    </div><!-- /input-group -->
+  <div class="col-sm-6">
+    <form ng-submit="ListVM.submit()">
 
+      <input type="text" class="form-control" ng-model="ListVM.task" />
+      <input type="date" class="form-control" ng-model="ListVM.dueDate" />
 
+      <button type="submit" class="btn btn-primary">
+        Add To-Do
+      </button>
 
-<br>
-<br>
-
-<div class="flex">
- 
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" style="margin-left: 700px; font-size: 40px;">
-
-         AngularJS To-Do List
-
-      </a>
-
-    </div>
+    </form>
   </div>
-</nav>
-
-<ul class="nav nav-tabs">
-
-  <li role="presentation"><a ui-sref="list">List</a></li>
-  <li role="presentation" class="active"><a ui-sref="create">Create</a></li>
-
-  <li role="presentation"><a ui-sref="completed">Completed</a></li>
-
-</ul>
-
-<br>
-
-<div class="col-lg-4">
-<div class="input-group">
-
-  <span class="input-group-addon" id="basic-addon1">To-Do:</span>
-
-  <input class="form-control" type="text" name="todoItem" aria-describedby="basic-addon1" ng=model="CreateVM.todos.todoItem">
-
-</div>
 </div>
 
-
-
-
-<br>
-<br>
-
-
-  <div class="col-lg-4">
-    <div class="input-group">
-      <input type="text" class="form-control" aria-label="...">
-      <div class="input-group-btn">
-
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-calendar"></span><span class="caret"></span></button>
-
-       
-
-      </div><!-- /btn-group -->
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-</div><!-- /.row -->
-
-
-
-<br>
-<br>
-<p><a class="btn btn-primary btn-lg" ng-click="CreateVM.addTodo()" role="button">Create To-Do</a></p>
-
-
-</div>
